@@ -1,0 +1,48 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar a,
+.icons {
+  color: #fff;
+}
+
+.hero-text h1 {
+  color: #fff;
+}
+
+video {
+  filter: brightness(70%);
+}
+
+.shopbtn,
+.morebtn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.brand-card,
+.category-card {
+  color: #fff;
+}
+
+.category-card {
+  border-style: solid;
+  border-color: white;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+footer p {
+  color: #ccc;
+}

@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+section {
+  font-family: "Judson";
+  font-weight: 400;
+  font-style: normal;
+}
+
+header,
+footer {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.navbar a {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+button {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.categories p {
+  font-size: 3.5em;
+}
+
+.brands p {
+  font-size: 2em;
+}
+
+.brands h2 {
+  font-size: 3em;
+}
+
+.logo {
+  font-size: 2em;
+}
