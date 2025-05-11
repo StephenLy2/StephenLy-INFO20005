@@ -263,3 +263,68 @@ footer {
 #confirmIcon {
   margin: 1rem;
 }
+
+.productTopSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.ProductMainSection {
+  height: 90vh;
+  position: relative;
+}
+
+.PRODUCT {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+
+.PRODUCT::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.productImage {
+  margin-right: 1.7rem;
+  flex: 0 0 auto;
+}
+
+.productLeftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 3%;
+}
+
+.productScroll {
+  margin: 1rem;
+}
+
+.productRightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 17%;
+}
+
+#Price {
+  margin-top: 1rem;
+  color: grey;
+}
