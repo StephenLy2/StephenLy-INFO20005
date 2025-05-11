@@ -60,3 +60,27 @@ button {
 .product-price {
   font-size: 1.25rem;
 }
+
+#confirmHeading,
+#confirmID {
+  text-align: center;
+}
+
+#confirmHeading {
+  font-size: 2.5rem;
+}
+
+#confirmID {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: grey;
+}
+
+.thanks {
+  font-size: 2.5rem;
+}
+
+.confirmbtn {
+  font-family: "Judson";
+  font-size: 1.3rem;
+}

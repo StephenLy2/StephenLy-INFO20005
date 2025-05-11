@@ -233,3 +233,33 @@ footer {
   width: 100%;
   padding: 1rem;
 }
+
+.confirmMainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: black solid;
+  width: 645px;
+  height: 178px;
+  margin: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.confirmbtn {
+  width: 400px;
+  height: 55px;
+  margin: 0.7rem;
+  border-radius: 20px;
+}
+
+#confirmIcon {
+  margin: 1rem;
+}
