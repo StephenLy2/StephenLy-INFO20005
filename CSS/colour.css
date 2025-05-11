@@ -1,4 +1,4 @@
-body {
+.homeBody {
   background-color: #000;
   color: #fff;
 }
@@ -45,4 +45,15 @@ footer {
 
 footer p {
   color: #ccc;
+}
+
+.browsingPageTopSection {
+  border-bottom-style: solid;
+  border-color: black;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

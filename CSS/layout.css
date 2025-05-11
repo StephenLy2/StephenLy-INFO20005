@@ -185,3 +185,51 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+.browsingPageTopSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+.filterContainer {
+  display: flex;
+  align-items: center;
+}
+
+.filterContainer img {
+  margin-right: 1rem;
+}
+
+.Product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+}
+
+.product-card {
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  width: 288px;
+  height: 329px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-name {
+  margin: 1rem;
+}
+
+.priceAndHeart {
+  margin: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}

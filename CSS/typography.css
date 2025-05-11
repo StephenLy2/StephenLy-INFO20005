@@ -52,3 +52,11 @@ button {
 .logo {
   font-size: 2em;
 }
+
+.browsingPageTopSection p {
+  font-size: 2em;
+}
+
+.product-price {
+  font-size: 1.25rem;
+}
