@@ -394,3 +394,74 @@ details p {
 details[open] .arrow-icon {
   transform: rotate(180deg);
 }
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  /* Stack nav elements */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .icons {
+    margin-top: 1rem;
+  }
+
+  /* Hero Section */
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .shopbtn {
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+
+  /* Brands Section */
+  .brand-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .brand-card img {
+    width: 80%;
+  }
+
+  /* Categories Section */
+  .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .category-card img {
+    width: 80%;
+  }
+
+  .categories p {
+    font-size: 2em;
+  }
+
+  /* Footer */
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footerContent > div {
+    text-align: center;
+  }
+}
