@@ -84,3 +84,13 @@ button {
   font-family: "Judson";
   font-size: 1.3rem;
 }
+
+#size-select {
+  font-size: 1rem;
+  font-family: "Judson";
+}
+
+summary {
+  font-size: 1rem;
+  font-weight: 600;
+}

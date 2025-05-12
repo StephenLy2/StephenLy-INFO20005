@@ -308,7 +308,7 @@ footer {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 3%;
+  left: 8%;
 }
 
 .productScroll {
@@ -316,15 +316,96 @@ footer {
 }
 
 .productRightSide {
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 17%;
+  right: 10%;
 }
 
 #Price {
   margin-top: 1rem;
   color: grey;
+}
+
+#size-select {
+  width: 500px;
+  padding: 0.75rem;
+  border: 1px solid black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  appearance: none;
+  background: white url("../Media/downArrowIcon.png") no-repeat right 1rem
+    center;
+  background-size: 12px;
+}
+
+.quantity {
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.7rem;
+}
+
+.quantity-btn {
+  background-color: white;
+  border: none;
+  margin-left: 1rem;
+}
+
+.AddtoCart {
+  background-color: black;
+  border: none;
+  color: white;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 30px;
+  font-weight: normal;
+}
+
+.product-info-section {
+  margin-top: 1rem;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+details {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+}
+
+summary {
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  list-style: none;
+}
+
+details[open] summary {
+  color: #333;
+}
+
+details p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+details[open] .arrow-icon {
+  transform: rotate(180deg);
 }
