@@ -9,6 +9,7 @@
     <link href="../CSS/layout.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
+     <!-- Navigation Bar -->
     <header class="navbar">
       <div class="logo">SUPPLY</div>
       <nav class="nav-links">
@@ -25,6 +26,7 @@
       </div>
     </header>
 
+    <!-- Top Section of Product Page (just below the navigation bar) -->
     <div class="productTopSection">
       <img src="../Media/backarrowIcon.png" class="back-icon" />
       <img
@@ -35,7 +37,11 @@
       />
     </div>
 
-    <main class="ProductMainSection">
+    <!-- Main section of Product Page -->
+    <!-- The main section is split into two parts; The Left Side and The Right Side -->
+    <section class="ProductMainSection">
+
+    <!-- Displays images of Product -->
       <div class="productLeftSide">
         <div class="PRODUCT">
           <img src="../Media/ProductPageImage5.png" class="productImage" />
@@ -47,8 +53,10 @@
         <img src="../Media/ProductScroll.png" class="productScroll" />
       </div>
 
+
+    <!-- Displays relevant info and features (i.e: Select Size option, Add-to-Cart button etc...) -->
       <div class="productRightSide">
-        <h2>AIR JORDAN 1 HIGH OG</h2>
+        <h2 id="NAME">AIR JORDAN 1 HIGH OG</h2>
         <h2 id="Price">$250.00</h2>
 
     
@@ -106,6 +114,6 @@
       </div>
 
       </div>
-    </main>
+    </section>
   </body>
 </html>

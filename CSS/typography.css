@@ -32,7 +32,10 @@ h3 {
   margin: 0 1rem;
 }
 
-button {
+/* CSS for Home Page */
+
+.shopbtn,
+.morebtn {
   font-size: 1em;
   font-weight: bold;
 }
@@ -53,6 +56,8 @@ button {
   font-size: 2em;
 }
 
+/* CSS for Browsing Page */
+
 .browsingPageTopSection p {
   font-size: 2em;
 }
@@ -60,6 +65,8 @@ button {
 .product-price {
   font-size: 1.25rem;
 }
+
+/* CSS for Confirmation Page */
 
 #confirmHeading,
 #confirmID {
@@ -85,6 +92,12 @@ button {
   font-size: 1.3rem;
 }
 
+/* CSS for Product Page */
+
+#NAME {
+  font-size: 1.8rem;
+}
+
 #size-select {
   font-size: 1rem;
   font-family: "Judson";
@@ -93,4 +106,21 @@ button {
 summary {
   font-size: 1rem;
   font-weight: 600;
+}
+
+.quantity-btn {
+  font-size: 1rem;
+}
+
+.AddtoCart {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+details p {
+  font-size: 0.9rem;
+}
+
+summary {
+  font-weight: normal;
 }

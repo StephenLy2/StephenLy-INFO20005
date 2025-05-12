@@ -1,3 +1,5 @@
+/* CSS for all Pages */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,6 +29,8 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* CSS for Home Page */
 
 .hero {
   position: relative;
@@ -59,8 +63,6 @@ body {
 }
 
 .brands {
-  border-top-style: solid;
-  border-color: white;
   padding: 2rem 1rem;
 }
 
@@ -97,8 +99,6 @@ body {
 }
 
 .categories {
-  border-top-style: solid;
-  border-color: white;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -120,7 +120,6 @@ body {
   position: relative;
   display: inline-block;
   text-align: center;
-  color: white;
 }
 
 .brand-card p,
@@ -134,8 +133,6 @@ body {
 }
 
 footer {
-  border-top-style: solid;
-  border-color: white;
   padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
@@ -186,6 +183,8 @@ footer {
   justify-content: center;
 }
 
+/* CSS for Browsing Page */
+
 .browsingPageTopSection {
   display: flex;
   justify-content: space-between;
@@ -211,8 +210,6 @@ footer {
 }
 
 .product-card {
-  border-style: solid;
-  border-color: black;
   text-align: center;
   width: 288px;
   height: 329px;
@@ -234,6 +231,8 @@ footer {
   padding: 1rem;
 }
 
+/* CSS for Confirmation Page */
+
 .confirmMainSection {
   display: flex;
   flex-direction: column;
@@ -246,7 +245,6 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: black solid;
   width: 550px;
   height: 160px;
   margin: 1.5rem;
@@ -264,6 +262,8 @@ footer {
   margin: 1rem;
 }
 
+/* CSS for Product Page */
+
 .productTopSection {
   display: flex;
   justify-content: space-between;
@@ -276,6 +276,7 @@ footer {
 .ProductMainSection {
   height: 90vh;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .PRODUCT {
@@ -305,7 +306,6 @@ footer {
 .productLeftSide {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: absolute;
   left: 8%;
@@ -319,15 +319,12 @@ footer {
   width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   right: 10%;
 }
 
 #Price {
   margin-top: 1rem;
-  color: grey;
 }
 
 #size-select {
@@ -351,20 +348,14 @@ footer {
 }
 
 .quantity-btn {
-  background-color: white;
-  border: none;
   margin-left: 1rem;
 }
 
 .AddtoCart {
-  background-color: black;
-  border: none;
-  color: white;
   margin-top: 2rem;
   width: 100%;
   padding: 0.75rem;
   border-radius: 30px;
-  font-weight: normal;
 }
 
 .product-info-section {
@@ -390,14 +381,8 @@ summary {
   list-style: none;
 }
 
-details[open] summary {
-  color: #333;
-}
-
 details p {
   margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #666;
 }
 
 .arrow-icon {

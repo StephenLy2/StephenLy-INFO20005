@@ -1,8 +1,3 @@
-.homeBody {
-  background-color: #000;
-  color: #fff;
-}
-
 .navbar {
   background-color: #000;
   color: #fff;
@@ -10,6 +5,13 @@
 
 .navbar a,
 .icons {
+  color: #fff;
+}
+
+/* CSS for Home Page */
+
+.homeBody {
+  background-color: #000;
   color: #fff;
 }
 
@@ -28,9 +30,19 @@ video {
   border: none;
 }
 
+.brands {
+  border-top-style: solid;
+  border-color: white;
+}
+
 .brand-card,
 .category-card {
   color: #fff;
+}
+
+.categories {
+  border-top-style: solid;
+  border-color: white;
 }
 
 .category-card {
@@ -41,14 +53,23 @@ video {
 footer {
   background-color: #000;
   color: #fff;
+  border-top-style: solid;
+  border-color: white;
 }
 
 footer p {
   color: #ccc;
 }
 
+/* CSS for Browsing Page */
+
 .browsingPageTopSection {
   border-bottom-style: solid;
+  border-color: black;
+}
+
+.product-card {
+  border-style: solid;
   border-color: black;
 }
 
@@ -58,7 +79,42 @@ footer p {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* CSS for Confirmation Page */
+
+.thanks {
+  border: black solid;
+}
+
 .confirmbtn {
   color: white;
   background-color: black;
+}
+
+/* CSS for Product Page */
+
+#Price {
+  color: grey;
+}
+
+.quantity-btn {
+  background-color: white;
+  border: none;
+}
+
+.AddtoCart {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+details[open] summary {
+  color: #333;
+}
+
+details p {
+  color: #666;
+}
+
+details {
+  border-bottom: 1px solid #ccc;
 }
