@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link href="../CSS/typography.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/colour.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/layout.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="logo">SUPPLY</div>
+      <div class="icons">
+        <img src="..//Media/SearchIcon.png" width="20px" height="20px" />
+        <img src="..//Media/ProfileIcon.png" width="35px" height="35px" />
+        <img src="..//Media/BagIcon.png" width="25px" height="25px" />
+      </div>
+    </header>
+
+    <!-- Top Section of Payment Page (just below the navigation bar) -->
+    <section class="PaymentTopSection">
+      <img src="..//Media/exitIcon.png" />
+    </section>
+
+    <!-- Main Section of Payment Page -->
+    <!-- Contains three sub-sections (Contact, Shipping and Payment) -->
+    <main class="PaymentMainSection">
+      <div class="Contactsection">
+        <h2 class="paymentHeading">Contact</h2>
+        <div class="ContactDetails">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Phone Number" />
+        </div>
+      </div>
+
+      <div class="Shippingsection">
+        <h2 class="paymentHeading">Shipping</h2>
+        <div class="ShippingDetails">
+          <input type="text" placeholder="Country/Region" />
+          <input type="text" placeholder="Standard/Express" />
+          <input type="text" placeholder="Address" />
+        </div>
+      </div>
+
+      <div class="Paymentsection">
+        <h2 class="paymentHeading">Payment</h2>
+        <div class="PaymentDetails">
+          <p>Credit Card</p>
+          <input type="text" placeholder="Name on Card" />
+          <input type="text" placeholder="Card Number" />
+          <input type="text" placeholder="Expiry Date" />
+          <input type="text" placeholder="CVC" />
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section of Payment Page -->
+    <!-- Displays order summary and 'Pay' Button -->
+    <footer class="paymentFooter">
+      <div class="total">
+        <h2>Order Summary</h2>
+        <p class="price">$0.00</p>
+      </div>
+      <div class="paybtn">
+        <button class="pay-button">Pay Now</button>
+      </div>
+    </footer>
+  </body>
+</html>

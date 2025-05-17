@@ -6,7 +6,7 @@ section {
 }
 
 header,
-footer {
+.homeFooter {
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
@@ -105,7 +105,7 @@ h3 {
 
 summary {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .quantity-btn {
@@ -121,6 +121,35 @@ details p {
   font-size: 0.9rem;
 }
 
-summary {
+/* CSS for Payment Page */
+
+.paymentHeading {
   font-weight: normal;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.paymentFooter {
+  font-family: "Judson";
+}
+
+.total h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.total p {
+  font-size: 1.5em;
+}
+
+.pay-button {
+  font-size: 1.5rem;
+  font-family: "Judson";
+}
+
+input {
+  font-style: italic;
+  font-family: "Judson";
+  font-size: 0.9rem;
 }

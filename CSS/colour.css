@@ -50,7 +50,7 @@ video {
   border-color: white;
 }
 
-footer {
+.homeFooter {
   background-color: #000;
   color: #fff;
   border-top-style: solid;
@@ -117,4 +117,15 @@ details p {
 
 details {
   border-bottom: 1px solid #ccc;
+}
+
+/* CSS for Payment Page */
+
+.paymentFooter {
+  border-top: solid black;
+}
+
+.pay-button {
+  background-color: black;
+  color: white;
 }

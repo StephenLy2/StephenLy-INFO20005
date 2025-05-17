@@ -395,73 +395,54 @@ details[open] .arrow-icon {
   transform: rotate(180deg);
 }
 
-/* ===== Responsive Design ===== */
-@media (max-width: 768px) {
-  /* Stack nav elements */
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+/* CSS for Payment Page */
 
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin: 1rem 0;
-  }
+.PaymentTopSection {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1rem;
+}
 
-  .icons {
-    margin-top: 1rem;
-  }
+.PaymentMainSection {
+  display: flex;
+  justify-content: space-around;
+}
 
-  /* Hero Section */
-  .hero-text h1 {
-    font-size: 2em;
-  }
+.ContactDetails,
+.ShippingDetails,
+.PaymentDetails {
+  display: flex;
+  flex-direction: column;
+}
 
-  .shopbtn {
-    font-size: 1em;
-    padding: 0.5em 1em;
-  }
+.paymentFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
 
-  /* Brands Section */
-  .brand-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
+.pay-button {
+  border-radius: 30px;
+  width: 13vw;
+  height: 5vh;
+  border: none;
+  cursor: pointer;
+}
 
-  .brand-card img {
-    width: 80%;
-  }
+input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border: 1px solid black;
+}
 
-  /* Categories Section */
-  .categories {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .category-card img {
-    width: 80%;
-  }
-
-  .categories p {
-    font-size: 2em;
-  }
-
-  /* Footer */
-  .footerContent {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .footerContent > div {
-    text-align: center;
-  }
+.Contactsection,
+.Shippingsection,
+.Paymentsection {
+  width: 350px;
 }
