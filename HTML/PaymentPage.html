@@ -48,12 +48,60 @@
       <div class="Paymentsection">
         <h2 class="paymentHeading">Payment</h2>
         <div class="PaymentDetails">
-          <p>Credit Card</p>
-          <input type="text" placeholder="Name on Card" />
-          <input type="text" placeholder="Card Number" />
-          <input type="text" placeholder="Expiry Date" />
-          <input type="text" placeholder="CVC" />
-        </div>
+
+        <details class="detailsTagPayment">
+          <summary class="summaryTagPayment">
+            Credit Card
+            <img
+              src="../Media/creditIcon.png"
+              id="creditcard"
+              width="20px"
+              height="12px"
+            />
+          </summary>
+          <div class="payment-form">
+            <input type="text" placeholder="Name on Card" />
+            <input type="text" placeholder="Card Number" />
+            <input type="text" placeholder="Expiry Date (MM/YY)" />
+            <input type="text" placeholder="CVV" />
+          </div>
+        </details>
+
+        <details class="detailsTagPayment">
+          <summary class="summaryTagPayment">
+            Apple Pay
+            <img
+              src="../Media/applePay.png"
+              id="applepay"
+              width="25px"
+              height="16px"
+            />
+          </summary>
+        </details>
+
+        <details class="detailsTagPayment">
+          <summary class="summaryTagPayment">
+            Google Pay
+            <img
+              src="../Media/googlePay.png"
+              id="googlepay"
+              width="30px"
+              height="12px"
+            />
+          </summary>
+        </details>
+
+        <details class="detailsTagPayment">
+          <summary class="summaryTagPayment">
+            PayPal
+            <img
+              src="../Media/paypal.png"
+              id="paypal"
+              width="14px"
+              height="14px"
+            />
+          </summary>
+        </details>
       </div>
     </main>
 
