@@ -484,3 +484,36 @@ input {
 #googlepay {
   margin-right: 5px;
 }
+
+/* CSS for Shooping Cart Page */
+
+.cartFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.checkout-button {
+  border-radius: 30px;
+  width: 13vw;
+  height: 5vh;
+  border: none;
+  cursor: pointer;
+}
+
+.CartTopSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.CartMainSection {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+}

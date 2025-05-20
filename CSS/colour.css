@@ -129,3 +129,14 @@ details {
   background-color: black;
   color: white;
 }
+
+/* CSS for Shopping Cart Page */
+
+.cartFooter {
+  border-top: solid black;
+}
+
+.checkout-button {
+  background-color: black;
+  color: white;
+}
