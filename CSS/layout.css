@@ -19,6 +19,10 @@ body {
   padding: 1rem;
 }
 
+.navbar div {
+  cursor: pointer;
+}
+
 .nav-links {
   display: flex;
   gap: 1rem;
@@ -28,6 +32,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 /* CSS for Home Page */
@@ -90,6 +95,7 @@ body {
   left: 5px;
   width: 520px;
   flex: 0 0 auto;
+  cursor: pointer;
 }
 
 .brand-card img {
@@ -107,6 +113,7 @@ body {
 
 .category-card {
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .category-card img {
@@ -216,6 +223,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .product-name {
@@ -271,6 +279,10 @@ footer {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.productTopSection img {
+  cursor: pointer;
 }
 
 .ProductMainSection {
@@ -403,6 +415,10 @@ details[open] .arrow-icon {
   margin: 1rem;
 }
 
+.PaymentTopSection img {
+  cursor: pointer;
+}
+
 .PaymentMainSection {
   display: flex;
   flex: 1;
@@ -508,6 +524,10 @@ input {
   justify-content: space-between;
   align-items: center;
   margin: 1rem;
+}
+
+.CartTopSection img {
+  cursor: pointer;
 }
 
 .CartMainSection {

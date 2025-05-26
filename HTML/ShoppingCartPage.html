@@ -7,13 +7,14 @@
     <link href="../CSS/typography.css" type="text/css" rel="stylesheet" />
     <link href="../CSS/colour.css" type="text/css" rel="stylesheet" />
     <link href="../CSS/layout.css" type="text/css" rel="stylesheet" />
+    <script src="../JavaScript/links.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
     <header class="navbar">
-      <div class="logo">SUPPLY</div>
+      <div onclick="goToHome()" class="logo">SUPPLY</div>
       <nav class="nav-links">
-        <a href="#">Shop</a>
+        <a onclick="goToBrowse2()" href="#">Shop</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
         <a href="#">News</a>
@@ -28,12 +29,10 @@
     <!-- Top Section of Shopping Cart Page (just below the navigation bar) -->
     <section class="CartTopSection">
       <h2>No. Items (0)</h2>
-      <img src="..//Media/exitIcon.png" />
+      <img onclick="goToBrowse2()" src="..//Media/exitIcon.png" />
     </section>
 
-    <main class="CartMainSection">
-      <h2>Under Construction</h2>
-    </main>
+    <main class="CartMainSection"></main>
 
     <!-- Footer Section of Shopping Cart Page -->
     <!-- Displays subtotal and 'Checkout' Button -->
@@ -43,7 +42,7 @@
         <p class="price">$0.00</p>
       </div>
       <div class="checkoutbtn">
-        <button class="checkout-button">Checkout</button>
+        <button onclick="goToPay()" class="checkout-button">Checkout</button>
       </div>
     </footer>
   </body>

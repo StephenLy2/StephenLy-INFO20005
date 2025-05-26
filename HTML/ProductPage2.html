@@ -7,13 +7,14 @@
     <link href="../CSS/typography.css" type="text/css" rel="stylesheet" />
     <link href="../CSS/colour.css" type="text/css" rel="stylesheet" />
     <link href="../CSS/layout.css" type="text/css" rel="stylesheet" />
+    <script src="../JavaScript/links.js"></script>
   </head>
   <body>
      <!-- Navigation Bar -->
     <header class="navbar">
-      <div class="logo">SUPPLY</div>
+      <div onclick="goToHome()" class="logo">SUPPLY</div>
       <nav class="nav-links">
-        <a href="#">Shop</a>
+        <a onclick="goToBrowse2()" href="#">Shop</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
         <a href="#">News</a>
@@ -21,14 +22,14 @@
       <div class="icons">
         <img src="..//Media/SearchIcon.png" width="20px" height="20px" />
         <img src="..//Media/ProfileIcon.png" width="35px" height="35px" />
-        <img src="..//Media/BagIcon.png" width="25px" height="25px" />
+        <img onclick="goToCart()" src="..//Media/BagIcon.png" width="25px" height="25px" />
         
       </div>
     </header>
 
     <!-- Top Section of Product Page (just below the navigation bar) -->
     <div class="productTopSection">
-      <img src="../Media/backarrowIcon.png" class="back-icon" />
+      <img onclick="goToBrowse2()" src="../Media/backarrowIcon.png" class="back-icon" />
       <img
         src="../Media/HeartIcon.png"
         class="heart-icon"

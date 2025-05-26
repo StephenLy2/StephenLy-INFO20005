@@ -7,11 +7,12 @@
     <link href="../CSS/typography.css" type="text/css" rel="stylesheet" />
     <link href="../CSS/colour.css" type="text/css" rel="stylesheet" />
     <link href="../CSS/layout.css" type="text/css" rel="stylesheet" />
+    <script src="../JavaScript/links.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
     <header class="navbar">
-      <div class="logo">SUPPLY</div>
+      <div onclick="goToHome()" class="logo">SUPPLY</div>
       <nav class="nav-links">
         <a href="#">Shop</a>
         <a href="#">About</a>
@@ -21,7 +22,12 @@
       <div class="icons">
         <img src="..//Media/SearchIcon.png" width="20px" height="20px" />
         <img src="..//Media/ProfileIcon.png" width="35px" height="35px" />
-        <img src="..//Media/BagIcon.png" width="25px" height="25px" />
+        <img
+          onclick="goToCart()"
+          src="..//Media/BagIcon.png"
+          width="25px"
+          height="25px"
+        />
       </div>
     </header>
 
@@ -44,13 +50,17 @@
         <p class="product-name">BEACH SHELL WAVE DYE</p>
         <img src="../Media/BrowsingPageImage1.png" alt="Product 1" />
         <div class="priceAndHeart">
-          <p class="product-price">$299.95</p>
+          <p class="product-price">Out of Stock</p>
           <img src="../Media/HeartIcon.png" class="heart-icon" />
         </div>
       </div>
       <div class="product-card">
         <p class="product-name">661000 SWEATSHIRT - BLACK</p>
-        <img src="../Media/BrowsingPageImage2.png" alt="Product 2" />
+        <img
+          onclick="goToProduct1()"
+          src="../Media/BrowsingPageImage2.png"
+          alt="Product 2"
+        />
         <div class="priceAndHeart">
           <p class="product-price">$649.95</p>
           <img src="../Media/HeartIcon.png" class="heart-icon" />
@@ -66,7 +76,11 @@
       </div>
       <div class="product-card">
         <p class="product-name">AIR JORDAN 1 HIGH OG</p>
-        <img src="../Media/BrowsingPageImage4.png" alt="Product 4" />
+        <img
+          onclick="goToProduct2()"
+          src="../Media/BrowsingPageImage4.png"
+          alt="Product 4"
+        />
         <div class="priceAndHeart">
           <p class="product-price">$250.00</p>
           <img src="../Media/HeartIcon.png" class="heart-icon" />
