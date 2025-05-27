@@ -174,3 +174,27 @@ input {
   font-size: 1.7rem;
   font-weight: normal;
 }
+
+.item-info h3 {
+  font-size: 24px;
+  margin: 0 0 10px;
+  font-family: "Judson";
+}
+
+.item-info p {
+  font-size: 18px;
+  font-family: "Judson";
+}
+
+.qty-btn {
+  font-size: 20px;
+}
+
+.qty-number {
+  font-size: 24px;
+}
+
+.itemSection3 p {
+  font-size: 20px;
+  font-weight: bold;
+}

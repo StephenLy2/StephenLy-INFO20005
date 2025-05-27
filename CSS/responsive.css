@@ -19,6 +19,11 @@
     height: 4vh;
   }
 
+  .ITEM1,
+  .ITEM2 {
+    width: 96%;
+  }
+
   /* CSS for Product Page */
 
   .PRODUCT {
@@ -198,6 +203,42 @@
 
   .CartTopSection h2 {
     font-size: 1.5rem;
+  }
+
+  .ITEM1,
+  .ITEM2 {
+    width: 93%;
+  }
+
+  .itemSection1 img {
+    width: 30vw;
+  }
+
+  .item-info h3 {
+    font-size: 10px;
+  }
+
+  .item-info p {
+    font-size: 10px;
+  }
+
+  .qty-btn {
+    width: 1rem;
+    height: 1rem;
+    font-size: 1rem;
+  }
+
+  .qty-number {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  .itemSection3 p {
+    font-size: 12px;
+  }
+
+  .itemSection3 img {
+    width: 12px;
   }
 
   /* CSS for Product Page */

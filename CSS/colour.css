@@ -140,3 +140,17 @@ details {
   background-color: black;
   color: white;
 }
+
+.ITEM1,
+.ITEM2 {
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-info p {
+  color: #999;
+}
+
+.qty-btn {
+  background-color: white;
+}

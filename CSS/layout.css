@@ -533,9 +533,68 @@ input {
 }
 
 .CartMainSection {
-  display: flex;
   flex: 1;
-  justify-content: space-around;
-  padding-bottom: 2rem;
-  margin-top: 1rem;
+}
+
+.ITEM1,
+.ITEM2 {
+  width: 98%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
+  gap: 20px;
+}
+
+.itemSection1 img {
+  width: 250px;
+}
+
+.itemSection2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.item-info h3 {
+  margin: 0 0 10px;
+}
+
+.item-info p {
+  margin: 4px 0;
+}
+
+.quantityCart {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.qty-number {
+  padding: 0 15px;
+}
+
+.itemSection3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.itemSection3 img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.itemSection3 p {
+  margin: 0;
 }
