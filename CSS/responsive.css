@@ -1,0 +1,358 @@
+/* Small desktops and Tablets */
+@media (min-width: 600px) and (max-width: 1000px) {
+  /* CSS for Payment Page */
+
+  .pay-button {
+    width: 15vw;
+    height: 4vh;
+  }
+
+  .Contactsection,
+  .Shippingsection,
+  .Paymentsection {
+    width: 265px;
+  }
+
+  /* CSS for Shooping Cart Page */
+  .checkout-button {
+    width: 21vw;
+    height: 4vh;
+  }
+
+  /* CSS for Product Page */
+
+  .PRODUCT {
+    width: 350px;
+    height: 350px;
+  }
+
+  .productRightSide {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 8%;
+  }
+
+  #size-select {
+    width: 350px;
+  }
+
+  #NAME {
+    font-size: 1.6rem;
+  }
+
+  /* CSS for Browsing Page */
+
+  .Product-cards {
+    gap: 0.7rem;
+    justify-content: center;
+  }
+
+  .product-card {
+    width: 205px;
+    height: 280px;
+  }
+
+  .product-card > img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+  }
+
+  .product-name {
+    font-size: 0.68rem;
+    min-height: 20px;
+    margin-top: 1;
+  }
+
+  .priceAndHeart {
+    margin-top: auto;
+  }
+
+  /* CSS for Home Page */
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero video {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text {
+    font-size: 0.8rem;
+  }
+
+  .brand-card {
+    left: 5px;
+    width: 400px;
+  }
+
+  .brand-card img {
+    width: 400px;
+    height: 267px;
+    object-fit: cover;
+  }
+
+  .category-card img {
+    width: 250px;
+    height: 415px;
+    object-fit: cover;
+  }
+
+  .categories p {
+    font-size: 2.8em;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .nav-links a {
+    display: none;
+  }
+  /* CSS for Confirmation Page */
+  .thanks {
+    width: 260px;
+    height: 90px;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .confirmbtn {
+    width: 240px;
+    height: 55px;
+    font-size: 1.1rem;
+  }
+
+  #confirmHeading {
+    font-size: 2rem;
+  }
+
+  #confirmIcon img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* CSS for Payment Page */
+
+  .PaymentMainSection {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    align-items: center;
+  }
+
+  .ContactDetails,
+  .ShippingDetails,
+  .PaymentDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pay-button {
+    width: 21vw;
+    height: 4vh;
+    font-size: 1rem;
+  }
+
+  .Contactsection,
+  .Shippingsection,
+  .Paymentsection {
+    width: 300px;
+    margin-bottom: 1.5rem;
+  }
+
+  .paymentHeading {
+    font-size: 1.7rem;
+  }
+
+  .total h2 {
+    font-size: 1.3rem;
+  }
+
+  .total p {
+    font-size: 1.3em;
+  }
+
+  /* CSS for Shopping Cart Page */
+
+  .checkout-button {
+    width: 21vw;
+    height: 4vh;
+    font-size: 1rem;
+  }
+
+  .CartTopSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .CartTopSection h2 {
+    font-size: 1.5rem;
+  }
+
+  /* CSS for Product Page */
+
+  .ProductMainSection {
+    position: relative;
+  }
+
+  .PRODUCT {
+    width: 300px;
+    height: 300px;
+  }
+
+  .productLeftSide {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .productRightSide {
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+  }
+
+  #size-select {
+    width: 300px;
+  }
+
+  #NAME {
+    font-size: 1.5rem;
+  }
+
+  /* CSS for Browsing Page */
+
+  .Product-cards {
+    gap: 0.7rem;
+    justify-content: center;
+    margin-bottom: 0.7rem;
+  }
+
+  .product-card {
+    width: 175px;
+    height: 210px;
+  }
+
+  .product-card > img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .product-name {
+    font-size: 0.68rem;
+    min-height: 20px;
+    margin-top: 1;
+  }
+
+  .priceAndHeart {
+    margin-top: auto;
+  }
+
+  .browsingPageTopSection p {
+    font-size: 1.5em;
+  }
+
+  .product-price {
+    font-size: 1.1rem;
+  }
+
+  /* CSS for Home Page */
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero video {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text {
+    font-size: 0.35rem;
+  }
+
+  .brand-card {
+    left: 5px;
+    width: 220px;
+  }
+
+  .brand-card img {
+    width: 220px;
+    height: 147px;
+    object-fit: cover;
+  }
+
+  .category-card img {
+    width: 100px;
+    height: 166px;
+    object-fit: cover;
+  }
+
+  .categories p {
+    font-size: 1em;
+  }
+
+  .shopbtn {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .brands p {
+    font-size: 1em;
+  }
+
+  .brands h2 {
+    font-size: 1.4rem;
+  }
+
+  .morebtn {
+    width: 80px;
+    height: 25px;
+    font-size: 0.8rem;
+  }
+
+  .brand-cards {
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
+  .homeFooter p {
+    font-size: 8px;
+  }
+
+  .footerContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 0.8rem;
+  }
+
+  #Instagram img,
+  #Facebook img {
+    width: 8px;
+    height: 8px;
+  }
+
+  #instaIcon {
+    margin-left: 0.2rem;
+  }
+
+  #facebookIcon {
+    margin-left: 0.28rem;
+  }
+}
