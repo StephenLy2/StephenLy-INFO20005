@@ -79,6 +79,22 @@ footer p {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-icon.popped {
+  animation: pop 0.3s ease;
+}
+
 /* CSS for Confirmation Page */
 
 .thanks {

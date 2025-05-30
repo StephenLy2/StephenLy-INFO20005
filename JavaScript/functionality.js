@@ -74,3 +74,31 @@ document.addEventListener("DOMContentLoaded", function () {
     updateButtons(); // Set initial button state
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hearts = document.querySelectorAll(".heart-icon");
+
+  hearts.forEach((heart) => {
+    const productId = heart.dataset.productId;
+
+    // Set icon based on saved state
+    const isLiked = localStorage.getItem(`liked-${productId}`) === "true";
+    heart.src = isLiked
+      ? "../Media/FilledHeartIcon.png"
+      : "../Media/HeartIcon.png";
+
+    heart.addEventListener("click", () => {
+      const currentState =
+        localStorage.getItem(`liked-${productId}`) === "true";
+      const newState = !currentState;
+      localStorage.setItem(`liked-${productId}`, newState);
+      heart.src = newState
+        ? "../Media/FilledHeartIcon.png"
+        : "../Media/HeartIcon.png";
+
+      heart.classList.remove("popped");
+      void heart.offsetWidth; // Trigger reflow to restart animation
+      heart.classList.add("popped");
+    });
+  });
+});
