@@ -363,6 +363,7 @@ footer {
 
 .quantity-btn {
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .AddtoCart {
