@@ -301,22 +301,3 @@ document.addEventListener("DOMContentLoaded", function () {
     priceElement.textContent = `$${storedSubtotal}`;
   }
 });
-
-/**
- * ==============================
- * Payment Page: Pay Button
- * ==============================
- * Clears cart data
- */
-document.addEventListener("DOMContentLoaded", function () {
-  const payButton = document.querySelector(".pay-button");
-
-  if (payButton) {
-    payButton.addEventListener("click", function () {
-      // Clear cart data from localStorage
-      localStorage.removeItem("cart-item-1");
-      localStorage.removeItem("cart-item-2");
-      localStorage.removeItem("cart-subtotal");
-    });
-  }
-});

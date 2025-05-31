@@ -1,5 +1,6 @@
 /**
  * Ensures that all input boxes have been filled in before users can proceed to Confirmation Page
+ * Also clears the shopping cart after successful payment
  */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -55,6 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       alert("Some fields are missing or incorrect.");
     } else {
+      // Validation successful, clear cart and proceed
+      localStorage.removeItem("cart-item-1");
+      localStorage.removeItem("cart-item-2");
+      localStorage.removeItem("cart-subtotal");
       alert("Payment successful! Thank you for your purchase.");
       goToConfirm(); // proceed
     }
