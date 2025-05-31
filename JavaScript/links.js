@@ -28,6 +28,12 @@ function goToCart() {
   window.location.href = "ShoppingCartPage.html";
 }
 
+// Takes users to Shopping Cart Page from the Home Page
+function goToCart2() {
+  sessionStorage.setItem("fromHomePage", "true");
+  window.location.href = "HTML/ShoppingCartPage.html";
+}
+
 // Takes users to Payment Page
 function goToPay() {
   window.location.href = "PaymentPage.html";
@@ -36,4 +42,22 @@ function goToPay() {
 // Takes users to Confirmation Page
 function goToConfirm() {
   window.location.href = "ConfirmationPage.html";
+}
+
+/**
+ * Handles the behavior when the user clicks the exit icon on the Cart page.
+ *
+ * If the user navigated to the Cart page from the Home page (tracked via sessionStorage),
+ * this function redirects them back to the Home page.
+ * Otherwise, it redirects them to the browsing page as usual.
+ */
+function handleCartExit() {
+  const fromHome = sessionStorage.getItem("fromHomePage");
+
+  if (fromHome === "true") {
+    sessionStorage.removeItem("fromHomePage"); // Clean up
+    goToHome();
+  } else {
+    goToBrowse2(); // Default behavior
+  }
 }

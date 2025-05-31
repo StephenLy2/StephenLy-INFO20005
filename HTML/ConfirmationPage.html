@@ -9,6 +9,7 @@
     <link href="../CSS/layout.css" type="text/css" rel="stylesheet" />
     <link href="../CSS/responsive.css" type="text/css" rel="stylesheet" />
     <script src="../JavaScript/links.js"></script>
+    <script src="../JavaScript/functionality.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -17,7 +18,12 @@
       <div class="icons">
         <img src="..//Media/SearchIcon.png" width="20px" height="20px" />
         <img src="..//Media/ProfileIcon.png" width="35px" height="35px" />
-        <img src="..//Media/BagIcon.png" width="25px" height="25px" />
+        <img
+          onclick="goToCart()"
+          src="..//Media/BagIcon.png"
+          width="25px"
+          height="25px"
+        />
       </div>
     </header>
 
@@ -27,7 +33,7 @@
         <img src="..//Media/TickIcon.png" />
       </div>
       <p id="confirmHeading">Order Confirmed!</p>
-      <p id="confirmID">Order ID: #123456</p>
+      <p id="confirmID">Order ID: <span id="order-id">#123456</span></p>
       <div class="thanks">
         <p>Thank You For Shopping At <br />Supply Store</p>
       </div>

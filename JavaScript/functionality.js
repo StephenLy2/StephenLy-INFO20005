@@ -178,12 +178,14 @@ function updateCartSummary() {
 
   // Enable/disable checkout button
   const checkoutBtn = document.querySelector(".checkout-button");
-  if (itemCount === 0) {
-    checkoutBtn.disabled = true;
-    checkoutBtn.classList.add("disabled");
-  } else {
-    checkoutBtn.disabled = false;
-    checkoutBtn.classList.remove("disabled");
+  if (checkoutBtn) {
+    if (itemCount === 0) {
+      checkoutBtn.disabled = true;
+      checkoutBtn.classList.add("disabled");
+    } else {
+      checkoutBtn.disabled = false;
+      checkoutBtn.classList.remove("disabled");
+    }
   }
 
   // Store subtotal for Payment Page
@@ -300,4 +302,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (storedSubtotal && priceElement) {
     priceElement.textContent = `$${storedSubtotal}`;
   }
+});
+
+// Generates a random 6 digit order ID
+document.addEventListener("DOMContentLoaded", function () {
+  const orderId = `#${Math.floor(100000 + Math.random() * 900000)}`;
+  document.getElementById("order-id").textContent = orderId;
 });
