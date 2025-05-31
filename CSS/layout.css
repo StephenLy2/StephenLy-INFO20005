@@ -540,7 +540,7 @@ input {
 .ITEM1,
 .ITEM2 {
   width: 98%;
-  display: flex;
+  display: none;
   align-items: stretch;
   justify-content: space-between;
   padding: 1rem;
