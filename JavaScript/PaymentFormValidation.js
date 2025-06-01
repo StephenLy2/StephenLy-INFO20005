@@ -40,14 +40,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Shipping validation
     if (!country.value.trim()) isValid = false; // Checks if field is empty
-    if (!shipping.value.trim()) isValid = false; // Checks if field is empty
+
+    const shippingValue = shipping.value.trim().toLowerCase();
+    if (shippingValue !== "standard" && shippingValue !== "express") {
+      isValid = false; // Users must type in either "Standard" or "Express"
+    }
+
     if (!address.value.trim()) isValid = false; // Checks if field is empty
 
     // Validate credit card section
     const creditCardDetails = cardName.closest(".payment-form");
     if (creditCardDetails && creditCardDetails.offsetParent !== null) {
       if (!cardName.value.trim()) isValid = false; // Checks if field is empty
-      if (!/^\d{13,19}$/.test(cardNumber.value.trim())) isValid = false; // Only allow numbers and must be between 13-19 digits
+
+      const cleanedCardNumber = cardNumber.value.replace(/[\s-]/g, "").trim();
+      if (!/^\d{13,19}$/.test(cleanedCardNumber)) isValid = false; // Only allow numbers and must be between 13-19 digits
+
       if (!/^\d{2}\/\d{2}$/.test(expiry.value.trim())) isValid = false; // Must match MM/YY format
       if (!/^\d{3,4}$/.test(cvv.value.trim())) isValid = false; // Only allow numbers and must be 3 or 4 digits
     }
