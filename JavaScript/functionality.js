@@ -307,5 +307,23 @@ document.addEventListener("DOMContentLoaded", function () {
 // Generates a random 6 digit order ID
 document.addEventListener("DOMContentLoaded", function () {
   const orderId = `#${Math.floor(100000 + Math.random() * 900000)}`;
-  document.getElementById("order-id").textContent = orderId;
+  const orderIdElement = document.getElementById("order-id");
+  if (orderIdElement) {
+    orderIdElement.textContent = orderId;
+  }
 });
+
+// Allows users to open and close the side menu
+function toggleSideMenu() {
+  const sideMenu = document.getElementById("sideMenu");
+  const overlay = document.getElementById("overlay");
+  const isOpen = sideMenu.classList.contains("open");
+
+  if (isOpen) {
+    sideMenu.classList.remove("open");
+    overlay.style.display = "none";
+  } else {
+    sideMenu.classList.add("open");
+    overlay.style.display = "block";
+  }
+}

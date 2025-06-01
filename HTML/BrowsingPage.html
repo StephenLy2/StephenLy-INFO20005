@@ -14,6 +14,9 @@
   <body>
     <!-- Navigation Bar -->
     <header class="navbar">
+      <div class="hamburger" onclick="toggleSideMenu()">
+        <img src="../Media/menuIcon.png" />
+      </div>
       <div onclick="goToHome()" class="logo">SUPPLY</div>
       <nav class="nav-links">
         <a href="#">Shop</a>
@@ -23,7 +26,12 @@
       </nav>
       <div class="icons">
         <img src="..//Media/SearchIcon.png" width="20px" height="20px" />
-        <img src="..//Media/ProfileIcon.png" width="35px" height="35px" />
+        <img
+          id="ProfileIcon"
+          src="..//Media/ProfileIcon.png"
+          width="35px"
+          height="35px"
+        />
         <img
           onclick="goToCart()"
           src="..//Media/BagIcon.png"
@@ -222,5 +230,24 @@
         </div>
       </div>
     </main>
+
+    <!-- Side Menu (Only visible on Mobile screens)-->
+    <div id="sideMenu" class="side-menu">
+      <div>
+        <img
+          onclick="toggleSideMenu()"
+          id="ExitIconSideMenu"
+          src="../Media/wCrossIcon.png"
+        />
+      </div>
+      <a href="#">Account</a>
+      <a href="#" onclick="goToBrowse2()">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">News</a>
+      <a href="#">Settings</a>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="toggleSideMenu()"></div>
   </body>
 </html>

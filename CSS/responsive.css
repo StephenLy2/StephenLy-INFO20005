@@ -1,4 +1,8 @@
-/* Small desktops and Tablets */
+/**
+ * =====================
+ * Small Desktop Screen
+ * =====================
+ */
 @media (min-width: 600px) and (max-width: 1000px) {
   /* CSS for Payment Page */
 
@@ -114,10 +118,36 @@
   }
 }
 
-/* Mobile */
+/**
+ * ========================
+ * Mobile and Tablet Screen
+ * ========================
+ */
 @media (max-width: 600px) {
+  /* CSS for all Pages */
   .nav-links a {
     display: none;
+  }
+  #ProfileIcon {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    color: #000;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+  }
+
+  #ExitIconSideMenu {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    cursor: pointer;
   }
   /* CSS for Confirmation Page */
   .thanks {
@@ -349,6 +379,7 @@
 
   .shopbtn {
     padding: 0.4rem 0.8rem;
+    font-size: 8px;
   }
 
   .brands p {
@@ -360,9 +391,9 @@
   }
 
   .morebtn {
-    width: 80px;
-    height: 25px;
-    font-size: 0.8rem;
+    width: 75px;
+    height: 23px;
+    font-size: 0.7rem;
   }
 
   .brand-cards {
@@ -378,7 +409,7 @@
 
   .footerContent {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: nowrap;
     gap: 0.8rem;
   }

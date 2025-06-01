@@ -9,11 +9,15 @@
     <link href="CSS/layout.css" type="text/css" rel="stylesheet" />
     <link href="CSS/responsive.css" type="text/css" rel="stylesheet" />
     <script src="JavaScript/links.js"></script>
+    <script src="JavaScript/functionality.js"></script>
   </head>
 
   <body class="homeBody">
     <!-- Navigation Bar -->
     <header class="navbar">
+      <div class="hamburger" onclick="toggleSideMenu()">
+        <img src="Media/menuIcon.png" />
+      </div>
       <div class="logo">SUPPLY</div>
       <nav class="nav-links">
         <a onclick="goToBrowse1()" href="#">Shop</a>
@@ -23,7 +27,12 @@
       </nav>
       <div class="icons">
         <img src="Media/SearchIcon.png" width="20px" height="20px" />
-        <img src="Media/ProfileIcon.png" width="35px" height="35px" />
+        <img
+          id="ProfileIcon"
+          src="Media/ProfileIcon.png"
+          width="35px"
+          height="35px"
+        />
         <img
           onclick="goToCart2()"
           src="Media/BagIcon.png"
@@ -142,5 +151,24 @@
         <p>© 2025 Supply Store</p>
       </div>
     </footer>
+
+    <!-- Side Menu (Only visible on Mobile screens)-->
+    <div id="sideMenu" class="side-menu">
+      <div>
+        <img
+          onclick="toggleSideMenu()"
+          id="ExitIconSideMenu"
+          src="Media/wCrossIcon.png"
+        />
+      </div>
+      <a href="#">Account</a>
+      <a href="#" onclick="goToBrowse1()">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">News</a>
+      <a href="#">Settings</a>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="toggleSideMenu()"></div>
   </body>
 </html>
